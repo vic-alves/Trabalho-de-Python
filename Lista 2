@@ -1,0 +1,36 @@
+lista 2:
+
+1. -
+
+saque=int(input('Valor do saque: '))
+notas_disponiveis=1, 5, 10, 50, 100
+cem=int(saque / 100)
+saque=saque - (cem*100)
+cinquenta=int(saque / 50)
+saque=saque - (cinquenta*50)
+dez=int(saque / 10)
+saque=saque - (dez*10)
+cinco=int(saque / 5)
+saque=saque - (cinco*5)
+um=saque
+print(f'Você recebera {cem} notas de cem reais')
+print(f'Você recebera {cinquenta} notas de cinquenta reais')
+print(f'Você recebera {dez} notas de dez reais')
+print(f'Você recebera {cinco} notas de cinco reais')
+print(f'Você recebera {um} notas de um real')
+
+2.-
+
+numero=int(input('Digite um numero inteiro: '))
+if numero % 2 == 0:
+    print('O numero e par')
+else:
+    print('O numero e impar')
+
+3.-
+
+numero=float(input('Digite um numero: '))
+if numero % 1 == 0:
+    print('O numero e inteiro')
+else:
+    print('O numero e decimal')
