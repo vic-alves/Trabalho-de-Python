@@ -1,0 +1,44 @@
+lista 1:
+
+1. -
+
+sexo = int(input('Coloque 1 para Masculino e 2 para Feminino: '))
+idade = float(input('Coloque sua idade: '))
+peso = float(input('Coloque seu peso: '))
+h = float(input('Coloque sua altura: '))
+peso_ideal = (72.7*h) - 58 if sexo == 1 else (62.1*h) - 44.7
+
+if peso < peso_ideal:
+    print('Voce esta abaixo do peso!!')
+elif peso == peso_ideal:
+    print('Voce esta em seu peso ideal!!')
+else:
+    print('Voce esta acima do Peso!!')
+print ('Peso Atual: %.2f / Peso ideal: %.2f' %(peso, peso_ideal))
+
+3.-
+salario_por_hora=float(input('Quanto voce recebe por hora trabalhada? '))
+horas=float(input('Quantas horas voce traabalha por mes? '))
+salario_bruto=salario_por_hora * horas
+ir= 0.11 * salario_bruto
+inss= 0.08 * salario_bruto
+sindicato= 0.05 * salario_bruto
+descontos=ir + inss + sindicato
+salario_liquido= salario_bruto - descontos
+print(f'Salário Bruto = R${salario_bruto:.2f} ')
+print(f'IR (11%) = R${ir:.2f}')
+print(f'INSS (8%) = R${inss:.2f}')
+print(f'Sindicato (5%) = R${sindicato:.2f}')
+print(f'Salario Liquido = R${salario_liquido:.2f}')
+
+4.-
+
+tamanho = int(input('Tamanho em metros quadrados: '))
+litros = tamanho / 3
+if tamanho % 54 == 0:
+	latas = tamanho / 54
+else: 
+	latas = int(tamanho / 54) + 1
+preco = latas * 80
+print ('%d latas' %latas)
+print ('R$ %.2f' %preco)
